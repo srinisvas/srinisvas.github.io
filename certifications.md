@@ -2,15 +2,17 @@
 title: "Certifications"
 ---
 
-# Certifications
-
 ## Cloud and Engineering
 - Google Cloud Professional Cloud Architect  
-- Google Cloud Associate Cloud Engineer  
+- Google Cloud Associate Cloud Engineer
+- Google Cloud Cloud Digital Leader
+- Data Engineering, Big Data, and Machine Learning on GCP specialization - Coursera and Google Cloud Training
+- Architecting with Google Cloud Platform Specialization Certification - Coursera and Google Cloud Training
+- Developing APIs with Google Cloud's APIGEE API platform specialization - Coursera and Google Cloud Training
+- SRE and DevOps Engineer with Google Cloud - Coursera and Google Cloud Training
 - AWS Solutions Architect Associate  
 - Pivotal Cloud Foundry Developer  
-- Data Engineering on GCP  
-- Big Data Hadoop Spark Developer  
+- Bigdata, Hadoop and Spark Developer Certification - Edureka
 
 ## Machine Learning and AI
 - Machine Learning Specialization — Stanford and DeepLearning AI  
@@ -20,6 +22,4 @@ title: "Certifications"
 - GitHub Foundations  
 
 ## Business and Leadership
-- Executive Education, London Business School  
-- Retail and E Commerce Certification (TCSL)  
-
+- Blue Mint Executive Education, London Business School
