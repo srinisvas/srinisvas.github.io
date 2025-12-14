@@ -1,4 +1,6 @@
 theme: minima
+sass:
+  sass_dir: assets/
 title: "Srinivasan Subramanian"
-description: "Technical Lead | Cloud Modernization | Integrations | Applied AI"
+description: "Technical Lead | Cloud Modernization | AI Practitioner"
 markdown: kramdown
