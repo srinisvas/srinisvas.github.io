@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="{{ '/' | relative_url }}" class="nav-name">Srinivasan Subramanian</a>
+      <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="{{ '/' | relative_url }}" {% if page.nav == 'home' %}class="active"{% endif %}>Home</a></li>
+        <li><a href="{{ '/experience' | relative_url }}" {% if page.nav == 'experience' %}class="active"{% endif %}>Experience</a></li>
+        <li><a href="{{ '/research' | relative_url }}" {% if page.nav == 'research' %}class="active"{% endif %}>Research</a></li>
+        <li><a href="{{ '/certifications' | relative_url }}" {% if page.nav == 'certifications' %}class="active"{% endif %}>Certifications</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  {{ content }}
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; {{ 'now' | date: '%Y' }} Srinivasan Subramanian &middot;
+      <a href="mailto:subramaniansrinivasan92@gmail.com">Email</a> &middot;
+      <a href="https://www.linkedin.com/in/srinivasan-subramanian-43b951b9/" target="_blank" rel="noopener">LinkedIn</a> &middot;
+      <a href="https://github.com/srinisvas" target="_blank" rel="noopener">GitHub</a>
+    </p>
+  </footer>
+
+</body>
+</html>
