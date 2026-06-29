@@ -1,6 +1,9 @@
-theme: minima
+title: "Srinivasan Subramanian"
+description: "Technical Lead | Researcher | Cloud & AI"
+markdown: kramdown
 sass:
   sass_dir: assets/
-title: "Srinivasan Subramanian"
-description: "Technical Lead | Cloud Modernization | AI Practitioner"
-markdown: kramdown
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
