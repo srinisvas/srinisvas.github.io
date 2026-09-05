@@ -1,0 +1,21 @@
+---
+layout: default
+title: Résumé
+nav: resume
+description: "Srinivasan Subramanian's professional résumé covering technical leadership, cloud engineering, applied AI, and research."
+---
+<header class="page-intro">
+  <p class="eyebrow">Résumé</p><h1>Srinivasan Subramanian</h1>
+  <p class="lede">Technical Lead · Cloud Systems · Applied AI</p>
+  <p><a href="mailto:{{ site.email }}">{{ site.email }}</a><br>Atlanta, Georgia · <a href="{{ site.linkedin_url }}">LinkedIn</a> · <a href="{{ site.github_url }}">GitHub</a></p>
+  <div class="actions resume-actions"><button type="button" data-print-resume hidden>Print / save as PDF</button><a class="text-link" href="{{ '/assets/srinivasan-subramanian-resume.txt' | relative_url }}" download>Download text résumé</a></div>
+</header>
+<article class="resume">
+  <h2>Profile</h2><p>Technical Lead with over a decade of experience in enterprise integration, distributed systems, cloud modernization, and applied AI. Experienced in architecture, hands-on development, delivery planning, mentoring, and production operations. Research interests include federated learning security, LLM safety, and efficient NLP.</p>
+  <h2>Experience</h2><p class="meta">Tata Consultancy Services · Client: The Home Depot</p>
+  {% include career.html %}
+  <h2>Technical expertise</h2><p>Java, Python, JavaScript, Spring Boot, React, Google Cloud, AWS, Docker, Kubernetes, Apache Beam, Cloud Dataflow, BigQuery, Kafka, IBM Sterling B2B Integrator, EDI X12, Vertex AI, Gemini, RAG, PyTorch.</p>
+  <h2>Education</h2><ul><li>MS, Computer Science, Kennesaw State University, 2025–2026. GPA 3.9.</li><li>Executive Education (BLUEMINT), London Business School with Tata Management Training Center, 2023.</li><li>B.E., Electronics &amp; Communication Engineering, Anna University, 2014–2018. GPA 3.2.</li></ul>
+  <h2>Selected certifications</h2><p>Google Cloud Professional Cloud Architect, Associate Cloud Engineer, Cloud Digital Leader, Generative AI Leader. AWS Solutions Architect – Associate. GitHub Copilot Certification.</p>
+  <h2>Research</h2><ul>{% for publication in site.data.publications %}{% unless publication.in_progress %}<li>{{ publication.title }}. {{ publication.short_venue }}. {{ publication.status }}.{% if publication.paper_url %} <a href="{{ publication.paper_url }}">Paper</a>{% endif %}</li>{% endunless %}{% endfor %}</ul>
+</article>

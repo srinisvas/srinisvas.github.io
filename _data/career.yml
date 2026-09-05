@@ -1,0 +1,33 @@
+- title: Technical Lead, Supplier Data Management
+  dates: 2021–Present
+  location: Atlanta, GA
+  summary: Lead delivery of supplier data systems, cloud services, and applied AI solutions across nearshore and offshore teams.
+  highlights:
+    - Own estimation, planning, execution, stakeholder coordination, and technical mentoring across teams and time zones.
+    - Design and deliver product review platforms, distributed rules engines, data pipelines, secure APIs, and event-driven services.
+    - Develop Vertex AI agents and retrieval-based tools for enterprise integration workflows.
+    - Guide EDI and MFT engineering teams and support production reliability and incident resolution.
+- title: Lead Software Engineer, Cloud Modernization
+  dates: 2018–2020
+  location: Chennai, India
+  summary: Led modernization of supplier onboarding, APIs, data pipelines, and B2B platforms.
+  highlights:
+    - Built onboarding APIs, Sterling integration services, and a Spring Boot bridge to Kafka.
+    - Migrated legacy APIs to containerized Spring Boot services and replicated on-premises data into Cloud SQL and BigQuery.
+    - Modernized EDI gateways and financial data exchange, including ISO 20022 payment workflows.
+- title: Software Engineer, Cloud Modernization
+  dates: 2017–2018
+  location: Chennai, India
+  summary: Developed integration services, internal automation, and deployment pipelines.
+  highlights:
+    - Built Python Slack bots for shipment and purchase-order transaction lookups.
+    - Migrated Tomcat APIs to containerized Spring Boot applications and built Jenkins and TeamCity pipelines.
+    - Authored functional designs, resolved system issues, and implemented unit tests.
+- title: Software Engineer, EDI & B2B Integration
+  dates: 2014–2017
+  location: Chennai, India
+  summary: Built and supported secure retail and transportation data exchange.
+  highlights:
+    - Developed IBM Sterling business processes, X12 mappings, and integration adapters using BPML and XSLT.
+    - Supported order, shipment, invoice, and logistics flows over AS2, HTTPS, SFTP, and FTPS.
+    - Automated operational monitoring with Shell and Python and supported managed file transfer with GXS Bizmanager.

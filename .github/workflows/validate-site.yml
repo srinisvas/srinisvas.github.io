@@ -1,0 +1,30 @@
+name: Validate portfolio
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Jekyll site
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+      - name: Check generated pages, assets, and navigation
+        run: python3 scripts/check_site.py _site
+      - name: Check JavaScript syntax
+        run: node --check assets/site.js
+      - name: Upload review build
+        uses: actions/upload-artifact@v4
+        with:
+          name: portfolio-review
+          path: _site/
+          retention-days: 7

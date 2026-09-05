@@ -1,0 +1,46 @@
+---
+layout: null
+---
+SRINIVASAN SUBRAMANIAN
+Technical Lead | Cloud Systems | Applied AI
+Atlanta, Georgia
+{{ site.email }}
+{{ site.linkedin_url }}
+{{ site.github_url }}
+
+PROFILE
+Technical Lead with over a decade of experience in enterprise integration,
+distributed systems, cloud modernization, and applied AI. Experienced in
+architecture, hands-on development, delivery planning, mentoring, and
+production operations. Research interests include federated learning
+security, LLM safety, and efficient NLP.
+
+EXPERIENCE
+Tata Consultancy Services | Client: The Home Depot
+{% for role in site.data.career %}
+{{ role.title }}
+{{ role.dates }} | {{ role.location }}
+{{ role.summary }}
+{% for point in role.highlights %}- {{ point }}
+{% endfor %}{% endfor %}
+TECHNICAL EXPERTISE
+Java, Python, JavaScript, Spring Boot, React, Google Cloud, AWS, Docker,
+Kubernetes, Apache Beam, Cloud Dataflow, BigQuery, Kafka, IBM Sterling
+B2B Integrator, EDI X12, Vertex AI, Gemini, RAG, PyTorch.
+
+EDUCATION
+MS, Computer Science | Kennesaw State University | 2025–2026 | GPA 3.9
+Executive Education, BLUEMINT | London Business School with TMTC | 2023
+B.E., Electronics & Communication Engineering | Anna University | 2014–2018 | GPA 3.2
+
+SELECTED CERTIFICATIONS
+Google Cloud Professional Cloud Architect, Associate Cloud Engineer,
+Cloud Digital Leader, Generative AI Leader.
+AWS Solutions Architect – Associate. GitHub Copilot Certification.
+
+RESEARCH
+{% for publication in site.data.publications %}{% unless publication.in_progress %}
+{{ publication.title }}
+{{ publication.short_venue }} | {{ publication.status }}
+{% if publication.paper_url %}{{ publication.paper_url }}
+{% endif %}{% endunless %}{% endfor %}

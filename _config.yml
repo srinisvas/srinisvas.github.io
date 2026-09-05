@@ -1,5 +1,10 @@
 title: "Srinivasan Subramanian"
-description: "Technical Lead | Researcher | Cloud & AI"
+description: "Technical lead building enterprise software, cloud platforms, and applied AI systems. Research in federated learning security and language model safety."
+url: "https://srinisvas.github.io"
+baseurl: ""
+email: "subramaniansrinivasan92@gmail.com"
+linkedin_url: "https://www.linkedin.com/in/srinivasan-subramanian-43b951b9/"
+github_url: "https://github.com/srinisvas"
 markdown: kramdown
 sass:
   sass_dir: assets/
@@ -7,3 +12,4 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+  - scripts

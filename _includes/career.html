@@ -1,0 +1,5 @@
+<div class="career-list">
+  {% for role in site.data.career %}
+  <article class="career-row"><div class="career-meta">{{ role.dates }}<br>{{ role.location }}</div><div><h3>{{ role.title }}</h3><p>{{ role.summary }}</p><ul>{% for point in role.highlights %}<li>{{ point }}</li>{% endfor %}</ul></div></article>
+  {% endfor %}
+</div>
