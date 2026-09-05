@@ -1,0 +1,52 @@
+# Add authors and resources only when verified. Acceptance statuses come from the owner's site.
+- id: fedmast
+  title: "Backdoors Leave Structural Traces: FedMAST for Backdoor Detection and Containment in Federated Learning"
+  short_title: Backdoors Leave Structural Traces
+  venue: IEEE International Conference on Tools with Artificial Intelligence
+  short_venue: ICTAI 2026
+  year: 2026
+  status: Accepted
+  featured: true
+  summary: Examines structural traces left by backdoor updates to detect and contain attacks in federated learning.
+- id: krum
+  title: "Bypassing Krum: Selection-Aware Backdoor Attacks in Federated Learning"
+  short_title: Bypassing Krum
+  venue: International Conference on Intelligent Multimedia, Networking, and Security
+  short_venue: IMNS 2026
+  year: 2026
+  status: Published
+  featured: true
+  authors: Srinivasan Subramanian, Md. Abdullah Al Hafiz Khan, Kazi Aminul Islam
+  summary: Studies backdoor attacks that explicitly target how robust aggregation selects client updates, exposing vulnerabilities in distance-based selection.
+  paper_url: https://arxiv.org/abs/2608.06637
+  paper_label: arXiv
+  pdf_url: https://arxiv.org/pdf/2608.06637
+- id: trace
+  title: A Multi-Layer Trace Benchmark for Coordinating Humans, AI, and Automated Controllers Under Drift, Constraints, and Failures
+  venue: International Conference on Machine Learning and Applications
+  short_venue: ICMLA 2026
+  year: 2026
+  status: Accepted
+  authors: Joshua Zuniga, Srinivasan Subramanian, Ramya Madhuri Narapureddy, Md. Abdullah Al Hafiz Khan
+  summary: Uses aligned traces across execution layers to study where drift begins and how failures affect coordination between humans, AI, and automated controllers.
+  paper_url: https://arxiv.org/abs/2608.06657
+  paper_label: TRACE preprint
+  pdf_url: https://arxiv.org/pdf/2608.06657
+- id: efficient-summarization
+  title: Efficient Summarization with Lightweight LLMs through Sparse Input Activation and Adaptive Prompting
+  venue: Applied Computing and Intelligence, volume 6, issue 1, pages 58–78
+  short_venue: ACI 2026
+  year: 2026
+  status: Published
+  authors: Srinivasan Subramanian, Ramya Madhuri Narapureddy, Mohana Priya Palanisamy, Kazi Aminul Islam, Md. Abdullah Al Hafiz Khan
+  summary: Combines document preprocessing, selective input, and adaptive prompting to improve technical summarization with lightweight language models.
+  paper_url: https://doi.org/10.3934/aci.2026004
+  paper_label: Published paper
+- id: unsafe-trajectories
+  title: "Beyond Unsafe Detection: Causal Localization of Unsafe Trajectories in Multi-Turn LLM Interactions"
+  venue: Manuscript under review
+  short_venue: Ongoing work
+  year: 2026
+  status: Under review
+  in_progress: true
+  summary: Investigates where multi-turn conversations transition from benign to unsafe, with a focus on localizing the turns that contribute to that transition.

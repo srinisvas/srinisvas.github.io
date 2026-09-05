@@ -1,0 +1,13 @@
+{% assign pub = include.publication %}
+<article class="publication" id="{{ pub.id }}">
+  <div class="pub-meta"><strong>{{ pub.short_venue }}</strong><span class="pub-status">{{ pub.status }}</span></div>
+  <div>
+    <h3>{% if include.compact %}<a href="{{ '/research.html' | relative_url }}#{{ pub.id }}">{{ pub.short_title | default: pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</h3>
+    {% unless include.compact %}
+    {% if pub.authors %}<p class="pub-authors">{{ pub.authors | replace: 'Srinivasan Subramanian', '<strong>Srinivasan Subramanian</strong>' }}</p>{% endif %}
+    <p class="pub-authors">{{ pub.venue }} · {{ pub.year }}</p>
+    {% endunless %}
+    <p>{{ pub.summary }}</p>
+    {% if pub.paper_url %}<div class="pub-resources"><a class="text-link" href="{{ pub.paper_url }}">{{ pub.paper_label }}</a>{% if pub.pdf_url %}<a class="text-link" href="{{ pub.pdf_url }}" aria-label="PDF of {{ pub.title | escape }}">PDF</a>{% endif %}</div>{% endif %}
+  </div>
+</article>

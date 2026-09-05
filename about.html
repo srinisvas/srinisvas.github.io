@@ -1,0 +1,36 @@
+---
+layout: default
+title: About
+nav: about
+description: "About Srinivasan Subramanian, technical lead and researcher. Education, professional credentials, recognition, and contact information."
+---
+<header class="page-intro">
+  <p class="eyebrow">About</p>
+  <h1>Engineering with a<br>researcher's curiosity.</h1>
+  <p class="lede">I'm Srinivasan Subramanian, a technical lead based in the Atlanta area. I build enterprise systems and study the security and reliability of machine learning.</p>
+</header>
+<section class="section" aria-labelledby="background-heading">
+  <div class="section-header"><h2 id="background-heading">Background</h2></div>
+  <div class="prose"><p>At Tata Consultancy Services, working with The Home Depot, my experience spans enterprise integration, cloud modernization, supplier data platforms, and applied AI. I combine hands-on engineering with architecture, delivery planning, and mentoring across teams.</p><p>My research focuses on federated learning security, language model safety, and efficient NLP. I am interested in how adversaries exploit learning systems, how failures can be detected, and how practical defenses can improve their trustworthiness.</p><p>I hold an MS in Computer Science from Kennesaw State University.</p></div>
+  <div class="actions"><a class="text-link" href="{{ '/engineering.html' | relative_url }}">Engineering work</a><a class="text-link" href="{{ '/research.html' | relative_url }}">Research &amp; publications</a><a class="text-link" href="{{ '/resume.html' | relative_url }}">View résumé</a></div>
+</section>
+<section class="section" aria-labelledby="education-heading">
+  <div class="section-header"><h2 id="education-heading">Education</h2></div>
+  <div class="detail-grid">
+    <div><h3>MS, Computer Science</h3><p>Kennesaw State University<br>Marietta, Georgia</p><p class="meta">2025–2026 · GPA 3.9</p></div>
+    <div><h3>B.E., Electronics &amp; Communication Engineering</h3><p>Anna University<br>Chennai, India</p><p class="meta">2014–2018 · GPA 3.2</p></div>
+    <div><h3>Executive Education, BLUEMINT</h3><p>London Business School</p><p class="meta">2023 · In partnership with Tata Management Training Center</p></div>
+  </div>
+</section>
+<section class="section" id="credentials" aria-labelledby="credentials-heading">
+  <div class="section-header"><h2 id="credentials-heading">Credentials &amp; continued learning</h2></div>
+  <div class="detail-grid">
+    <div class="credential-group"><h3>Professional certifications</h3><ul class="plain-list">{% for credential in site.data.credentials.certifications %}<li>{{ credential.title }}<span>{{ credential.issuer }}</span></li>{% endfor %}</ul></div>
+    <div class="credential-group"><h3>Courses &amp; specializations</h3><ul class="plain-list">{% for credential in site.data.credentials.learning %}{% unless credential.category == 'Business & Leadership' %}<li>{{ credential.title }}<span>{{ credential.issuer }}</span></li>{% endunless %}{% endfor %}</ul></div>
+  </div>
+</section>
+<section class="section" aria-labelledby="recognition-heading">
+  <div class="section-header"><h2 id="recognition-heading">Recognition</h2></div>
+  <div class="detail-grid"><div><h3>The Home Depot</h3><ul class="plain-list"><li>Cyber Bravo Award</li></ul></div><div><h3>Tata Consultancy Services</h3><ul class="plain-list"><li>Contextual Masters Award</li><li>Contextual Master Award</li><li>Star of the Quarter Award</li><li>Service &amp; Commitment Award</li><li>Applause Award</li></ul></div></div>
+</section>
+<section class="contact" id="contact" aria-labelledby="contact-heading"><h2 id="contact-heading">Get in touch</h2><p>For engineering and research conversations.</p><div class="actions"><a href="mailto:{{ site.email }}">{{ site.email }}</a><a class="text-link" href="{{ site.linkedin_url }}">LinkedIn</a><a class="text-link" href="{{ site.github_url }}">GitHub</a></div></section>

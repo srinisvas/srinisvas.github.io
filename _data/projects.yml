@@ -1,0 +1,27 @@
+- id: product-review
+  category: Cloud & data systems
+  title: Unified product review platform
+  summary: Bringing product data from multiple systems into one merchant workflow, supported by a distributed rules engine.
+  technologies: Google Cloud Dataflow · Apache Beam · Drools · Java · React
+  problem: Merchants needed a consolidated view of product information across source systems, with support for both manual review and automated evaluation.
+  responsibility: Led the platform's end-to-end design and delivery, including the user interface, backend services, data pipelines, and rules engine.
+  approach: Built pipelines to ingest and normalize product data, Java services to support UI-specific workflows, and a distributed evaluation engine using Apache Beam and Drools on Google Cloud Dataflow.
+  result: Delivered a unified product review workflow with consolidated data for merchant decisions and automated rule-based evaluations.
+- id: applied-ai
+  category: Applied AI
+  title: AI assistance for enterprise integration
+  summary: Agents for X12 generation and validation, with retrieval over EDI specifications and XML schemas.
+  technologies: Vertex AI · Gemini · RAG · Vector search
+  problem: EDI specifications, schemas, and partner configurations create complex information and validation workflows for business users.
+  responsibility: Developed GenAI solutions for enterprise integration, including specialized agents and retrieval-based assistance.
+  approach: Used Vertex AI and Gemini to build agents for X12 generation, data validation, and partner configuration workflows. Integrated retrieval and vector search to answer questions grounded in EDI specifications and XML schemas.
+  result: Created assistance for specification lookup and integration tasks, with specialized agents supporting generation and validation workflows.
+- id: integration-modernization
+  category: Enterprise integration
+  title: Modernizing B2B and supplier integrations
+  summary: Connecting established enterprise platforms with cloud services, secure APIs, and event-driven data flows.
+  technologies: IBM Sterling B2B Integrator · Spring Boot · Kafka · BigQuery · Cloud SQL
+  problem: Supplier onboarding and data exchange depended on legacy APIs, on-premises data, and established EDI platforms.
+  responsibility: Led modernization work and provided technical guidance to EDI and managed file transfer teams.
+  approach: Built API-driven supplier onboarding, a REST-based resiliency layer for Sterling integrations, and a Spring Boot bridge to Kafka. Migrated legacy APIs to containerized services and replicated Oracle and DB2 data to cloud platforms.
+  result: Enabled cloud-based supplier data access and event-driven integration while supporting existing B2B transaction flows.
